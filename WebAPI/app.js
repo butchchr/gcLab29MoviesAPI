@@ -5,10 +5,11 @@ function loadData() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var data = JSON.parse(this.responseText);
-      api.Movies.forEach(element => {
+      data.forEach(element => {
         console.log(element);
         var node = document.createElement("li");
-        node.innerText = element;
+        node.innerText =
+          "Title: " + element.Name + "\n" + " Category: " + element.Category;
         document.getElementById("movies").appendChild(node);
       });
     }
