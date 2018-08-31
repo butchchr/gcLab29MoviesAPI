@@ -10,9 +10,44 @@
 <body>
     <h1>Get the 12 movie list!</h1>
     <div>
-        <button type="button" onclick="loadData()">12 Movies</button>
+        <button type="button" onclick="loadMovies()">All Movies</button>
     </div>
     <div class="display">
+
+    </div>
+
+    <h4>View by Category</h4>
+    <div>
+        <button type="button" onclick="loadDrama()">Drama</button>
+    </div>
+    <div class="display">
+        <ul id="drama"></ul>
+    </div>
+    <div>
+        <button type="button" onclick="loadAction()">Action</button>
+    </div>
+    <div class="display">
+        <ul id="action"></ul>
+    </div>
+    <div>
+        <button type="button" onclick="loadSports()">Sports</button>
+    </div>
+    <div class="display">
+        <ul id="sports"></ul>
+    </div>
+    <div>
+        <button type="button" onclick="loadComedy()">Comedy</button>
+    </div>
+    <div class="display">
+        <ul id="comedy"></ul>
+    </div>
+    <div>
+        <button type="button" onclick="loadBad()">Bad</button>
+    </div>
+    <div class="display">
+        <ul id="bad"></ul>
+    </div>
+    <div>
         <ul id="movies"></ul>
     </div>
 
